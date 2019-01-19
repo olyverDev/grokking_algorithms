@@ -7,10 +7,11 @@ const binarySearch = (value, array = []) => {
 
       let start = 0;
       let end = array.length - 1;
+      let middleIdx, middleValue;
 
       while (start <= end) {
-        const middleIdx = Math.round((start + end) / 2);
-        const middleValue = array[middleIdx];
+        middleIdx = Math.round((start + end) / 2);
+        middleValue = array[middleIdx];
 
         if (middleValue === value) return middleIdx;
 
