@@ -2,7 +2,7 @@
 const qsort = (array = []) => {
   if (array.length < 2) return array;
 
-  const pillar = array[0];
+  const pillar = array[0]; // FIXME: select effective pillar element
   const left = array.slice(1).filter(el => el <= pillar);
   const right = array.filter(el => el > pillar);
 
